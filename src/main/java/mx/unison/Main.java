@@ -29,6 +29,6 @@ public class Main {
             e.printStackTrace();
         }
         System.out.println("Asentamientos Urbanos: " + Urbanos);
-        System.out.println("Asentamientos Rurales: " + Rurales);
+        System.out.println("Asentamientos Rurales : " + Rurales);
     }
 }
