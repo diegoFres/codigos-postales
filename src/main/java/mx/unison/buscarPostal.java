@@ -11,7 +11,14 @@ public class buscarPostal {
         String linea;
         String separador = ",";
 
-     catch (IOException e) {
+        try (BufferedReader br = new BufferedReader(new FileReader(archivo))) {
+            while ((linea = br.readLine()) != null) {
+                String[] datos = linea.split(separador);
+                String codigoP = datos[0].trim();
+                String asentamiento = datos[1].trim();
+
+            }
+        } catch (IOException e) {
             e.printStackTrace();
         }
 
