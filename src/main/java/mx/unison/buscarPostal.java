@@ -16,6 +16,13 @@ public class buscarPostal {
                 String[] datos = linea.split(separador);
                 String codigoP = datos[0].trim();
                 String asentamiento = datos[1].trim();
+// Verificar si el código postal está en los argumentos
+for (String arg : args) {
+  if (arg.equals(codigoP)) {
+     System.out.println("Codigo Postal: " + codigoP + " - Asentamiento: " + asentamiento);
+                    }
+                }
+
 
             }
         } catch (IOException e) {
